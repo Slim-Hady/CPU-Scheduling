@@ -19,6 +19,7 @@ void readFile(const char* filename, process p[], int* n){
         p[i].start_time = 0;
         p[i].waiting_time = 0;
         p[i].turnaround_time = 0;
+        p[i].completion_time= 0;
         p[i].remaining_time = p[i].burst_time;
         sum += p[i].arrival_time + p[i].waiting_time ;
         i++;
