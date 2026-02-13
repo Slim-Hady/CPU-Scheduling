@@ -53,3 +53,16 @@ void writeFile(const char* filename, process p[], int n){
     fprintf(output, "Average Turnaround Time = %.2f\n", total_turnaround / n);
     fclose(output);
 }
+// this sorting by arrival time ( bubble sort)
+void sort(process p [] , int n){
+    process temp;
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (p[j].arrival_time > p[j + 1].arrival_time) {
+                temp = p[j];
+                p[j] = p[j + 1];
+                p[j + 1] = temp;
+            }
+        }
+    }
+}
