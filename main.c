@@ -11,8 +11,7 @@ int main() {
 
     printf("Successfully read %d processes.\n", n);
     
-    // FCFS(p ,n);  <-- شيلنا دي
-    sjf(p, n);   // <-- وحطينا دي
+    sjf(p, n);   
     
     writeFile("output.txt", p, n);
     printf("Output file created (SJF Result).\n");
