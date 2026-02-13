@@ -10,9 +10,12 @@ int main() {
     readFile("input.txt", p, &n); 
 
     printf("Successfully read %d processes.\n", n);
-    FCFS(p ,n);
+    
+    // FCFS(p ,n);  <-- شيلنا دي
+    sjf(p, n);   // <-- وحطينا دي
+    
     writeFile("output.txt", p, n);
-    printf("Output file created.\n");
+    printf("Output file created (SJF Result).\n");
     
     return 0;
 }

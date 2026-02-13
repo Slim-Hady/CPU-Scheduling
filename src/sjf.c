@@ -21,7 +21,9 @@ void sjf(process p[] , int n){
                     }
 
             }
-            if(idx != -1){
+           
+        }
+         if(idx != -1){
             p[idx].start_time = curr_time;
             p[idx].completion_time = curr_time + p[idx].burst_time;
             p[idx].turnaround_time = p[idx].completion_time - p[idx].arrival_time;
@@ -32,6 +34,5 @@ void sjf(process p[] , int n){
             curr_time = p[idx].completion_time;
             }
             else curr_time++;
-        }
     }
 }
