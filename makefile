@@ -1,7 +1,6 @@
 CC = gcc
 CFLAGS = -I./include
-# ضيفنا src/sjf.c في السطر اللي جاي ده
-SRCS = main.c src/utils.c src/fcfs.c src/sjf.c
+SRCS = main.c src/utils.c src/fcfs.c src/sjf.c src/rr.c
 TARGET = scheduler
 
 all:

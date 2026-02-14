@@ -8,13 +8,13 @@ int main() {
     int n;
 
     readFile("input.txt", p, &n); 
-
     printf("Successfully read %d processes.\n", n);
-    
-    sjf(p, n);   
-    
+
+    int quantum = 2; 
+    rr(p, n, quantum);
+
     writeFile("output.txt", p, n);
-    printf("Output file created (SJF Result).\n");
+    printf("Output file created.\n");
     
     return 0;
 }

@@ -24,6 +24,8 @@ void rr(process p[] , int n , int quantum){
                     p[i].remaining_time = 0;
                     completed++;
                     p[i].completion_time = curr;
+                    p[i].turnaround_time = p[i].completion_time - p[i].arrival_time; 
+                    p[i].waiting_time = p[i].turnaround_time - p[i].burst_time;
                 }
             }
         }
