@@ -1,9 +1,9 @@
 PID	AT	BT	WT	TAT
 -------------------------------------
-1	0	7	9	16
+1	0	7	0	7
 2	2	4	5	9
-3	4	1	0	1
-4	5	4	4	8
+3	4	1	7	8
+4	5	4	7	11
 -------------------------------------
-Average Waiting Time = 4.50
-Average Turnaround Time = 8.50
+Average Waiting Time = 4.75
+Average Turnaround Time = 8.75
