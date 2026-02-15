@@ -46,14 +46,16 @@ The program reads process data from "input.txt".
 IMPORTANT: The file must contain numbers only. Do not write text headers like "ID" or "Arrival".
 
 The format for each line is:
+
 [Process ID] [Arrival Time] [Burst Time]
 
 Example content for input.txt:
+```
 1 0 7
 2 2 4
 3 4 1
 4 5 4
-
+```
 ## Usage
 
 1. Fill "input.txt" with your process data.
